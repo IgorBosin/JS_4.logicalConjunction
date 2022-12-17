@@ -149,6 +149,23 @@
 // else if (login == ('' || null)) {alert ('Cancel')}
 // else {alert ('I do not know you')}
 
+// ПРОСТАНОВКА ЧИТАЕМОСТИ
+let pass;
+let login = prompt('Введите логин','');
+if (login === 'Admin') {
+    pass = prompt('Введите пароль','');
+    if (pass === 'general') {
+        alert('Hello');
+    }else if (pass === '' || pass === null) {
+        alert('Cancel');
+    }else {
+        alert('Password is not valid');
+    }
+}else if (login === '' || login === null) {
+    alert ('Cancel');
+}else {
+    alert ('I do not know you');
+}
     </script>
 
 
